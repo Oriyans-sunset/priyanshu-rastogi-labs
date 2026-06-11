@@ -14,7 +14,7 @@ public class SpringDemo {
 //		System.out.println(emp.toString());
 
 		ApplicationContext context = new ClassPathXmlApplicationContext("SpringConfig.xml");
-		Employee emp = context.getBean(Employee.class);
+		Employee emp = context.getBean("emp2", Employee.class);
 		System.out.println(emp.toString());
 
 		((AbstractApplicationContext) context).close();
