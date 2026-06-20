@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.ibm.demo.model.Employee;
 
-public class SpringDemo {
+public class SpringXMLDemo {
 
 	public static void main(String[] args) {
 		System.out.println("Start");
@@ -19,7 +19,5 @@ public class SpringDemo {
 
 		((AbstractApplicationContext) context).close();
 		System.out.println("End");
-
 	}
-
 }
